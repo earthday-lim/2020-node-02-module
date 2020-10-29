@@ -1,0 +1,4 @@
+Ž��â - ���� - �ɼ� - ���� - �������� ����̺� ǥ��üũ + �˷��� ���� Ȯ��� ����� üũ����
+npm i -g nodemon : �ڱⰡ �˾Ƽ� �������ִ� ��
+node_modules�� github�� �ø��ʿ� �����Ƿ� Ȯ�����α׷����� gitignore����� f1Ű�� ������ git ��ġ + f1 add gitignore - visual �Ʒ��� ���� ���� �ٽ� f1 addgitignore - node - append
+터미널에서 오류뜨면 cmd인지 powershell인지 확인하기
