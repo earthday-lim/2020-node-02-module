@@ -1,3 +1,72 @@
+우리가 필요한 것
+git/node/npm
+
+우리가 설치해야할 것
+git/node
+(cuz. node.js를 설치하면 npm이 같이 설치된다)
+
+#1 cmd (단, 설치 후 열거나 이미 열려있었다면 재실행할 것, vscode 모두 닫고 할 것)
+git config --global user.name 'gpdhd408'
+git config --global user.email 'gpdhd408@naver.com'
+
+#2 clone
+1. cmd창에서 clone 하는 법
+cd Documents
+cd 저녁반_현혜원
+git clone https://github.com/Hyewon95/node_01_hello.git
+
+2. git bash here로 clone 하는 법
+git clone https://github.com/Hyewon95/node_01_hello.git
+
+#3 git  연결
+git init
+git remote add origin https://github.com/Hyewon95/node_02_module.git
+
+#4 일반 자격 증명 추가
+commit - ctrl + enter - always - push - 브라우저로 가서 authorize
+
+* git init이 안 될 경우
+select default schell - command prompt - 현재 켜져있는 터미널 창 버리기 - 새 터미널창 열기(ctrl + j)
+
+#5 node_modules 생성(숨겨할 파일 저장소)
+npm i
+(package.json 내 dependencies에 있는 모든 패키지를 자동 설치)
+
+#6 nodemon 설치(문서 내용 수정 시 마다 자동으로 서버 restarting)
+npm i -g nodemon
+
+#7 express 프레임워크
+npm i express
+
+#8 gitignore(node_modules)
+확장 - gitignore 0.6.0 설치
+F1 - git - add gitignore - visualstudiocode
+F1 - git - add gitignore - node - append(visualstudiocode 뒤에 붙일 것)
+
+#9 moment 설치(날짜 표기 시 편리)
+npm i moment
+----------------------------------------------------------------------------------------------------
+파일 탐색기 - 보기 - 옵션 - 보기 -
+숨김 파일, 폴더 및 드라이브 표시 체크 & 알려진 파일 형식의 파일 확장명 숨기기 체크해제
+- 적용 - 모든 폴더에 적용
+----------------------------------------------------------------------------------------------------
+배열 객체 함수
+const로 선언(cuz. 재선언을 방지하기 위해)
+----------------------------------------------------------------------------------------------------
+Q)
+app.use('/', express.static(path.join(__dirname, './public'))); // 절대 경로 생성
+
+app.get('/', (req, res) => {
+    res.send('<h1>hi~ hyewon</h1>');
+});
+
+A)
+- public 폴더에 index.html 문서가 없을 때, /로 요청이 들어올 경우
+app.use 명령을 지나 app.get 명령을 수행
+
+- public 폴더에 index.html 문서가 있을 때, /로 요청이 들어올 경우
+app.use 명령을 수행
+
 Ž��â - ���� - �ɼ� - ���� - �������� ����̺� ǥ��üũ + �˷��� ���� Ȯ��� ����� üũ����
 npm i -g nodemon : �ڱⰡ �˾Ƽ� �������ִ� ��
 node_modules�� github�� �ø��ʿ� �����Ƿ� Ȯ�����α׷����� gitignore����� f1Ű�� ������ git ��ġ + f1 add gitignore - visual �Ʒ��� ���� ���� �ٽ� f1 addgitignore - node - append
